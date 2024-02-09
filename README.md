@@ -38,6 +38,13 @@
   ```
   pip install -r requirements.txt
   ```
+  
+### 4. DB Migrations
+
+  ```
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
 
 ### 4. Run Django Server.
 
