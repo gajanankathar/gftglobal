@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>
+            {% block title %}
+                GFT GLOBAL
+            {% endblock %}
+        </title>
+
+        {% block main_css %}
+            <link rel="stylesheet" href="{% static 'lib/css/bootstrap.min.css' %}">
+        {% endblock %}
+        {% block main_js %}
+            <script src="{% static 'lib/js/bootstrap.min.js' %}"></script>
+        {% endblock %}
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="container">
+            <div class="row mt-4">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
