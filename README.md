@@ -52,7 +52,7 @@
   python manage.py runserver
   ```
 
-### 5. Access home page through browser 
+### 5. Sitemap 
 
 - Home page
   ```
